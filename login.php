@@ -18,7 +18,7 @@
         <input type="button" value="Start coding">
       </form>
     </section>
-    <footer >
+    <footer>
       <span>created by Alvaro Diaz</span>
       <span>devChallenges.io</span>
     </footer>
