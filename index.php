@@ -47,7 +47,7 @@
       </section>
     </section>
     <footer>
-      <span>created by Alvaro Diaz</span>
+      <span>created by <a href="https://alvarobyui.github.io/Portfolio-Jun-2023/" target="_blank">Alvaro Diaz</a></span>
       <span>devChallenges.io</span>
     </footer>
   </div>
