@@ -5,18 +5,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Personal info</title>
+  <link rel="stylesheet" href="./estilos/personal_info.css">
 </head>
 
 <body>
   <div class="container">
     <main>
-      <div class="logo">
-        <img src="logo.jpg" alt="logo">
+      <div class="heading">
+        <div class="logo">
+          <img src="./img/logo.png " alt="logo">
+        </div>
+        <div class="photo">
+          <img src="./img/user.png" alt="user">
+        </div>
       </div>
       <div class="personal-info">
-        <h1>Personal info</h1>
-        <p>Basic info, like your name and photo</p>
-        <div class="box">
+        <div class="titles">
+          <h1>Personal info</h1>
+          <p>Basic info, like your name and photo</p>
+        </div>
+        <div class="box-content">
           <section class="content-heading">
             <div class="heading--title">
               <h2>Profile</h2>
