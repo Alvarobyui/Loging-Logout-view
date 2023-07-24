@@ -37,6 +37,9 @@ img {
   border-radius: 5px;
 }
 
+.personal-info {
+  margin-top: 40px;
+}
 .personal-info .titles{
   display: flex;
   flex-direction: column;
@@ -82,26 +85,65 @@ img {
   color: #828282;
 }
 
-.box-content .content {
+.content {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  align-items: start;
   border-bottom: 1px solid #bbbbbb;
+  margin-bottom: 20px;
 }
-.content p:nth-child(1) {
-  color: #909090;
+.content label {
   font-size: 13px;
 }
-.content p:nth-child(2) {
-  font-size: 16px;
-  padding-left: 40px;
-  text-align: right;
+.content input {
+  font-size: 10px;
+  width: 100%;
+  border-radius: 5px;
+  height: 40px;
 }
-.content .content--img {
+#bio {
+  height: 150px;
+  display: flex;
+  align-items: start;
+}
+#save {
+  background-color: #2F80ED;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+.content--input {
+  margin: 8px 0 15px;
+}
+
+.change-profile {
+  display: flex;
+  gap: 1.2rem;
+}
+.change-info h2 {
+  margin-top: 5px;
+}
+.profile--img {
+  width: 72px;
+  height: 72px;
+}
+.profile--img img{
   border-radius: 10px;
 }
-.content .content--img img{
-  border-radius: 10px;
+
+#back {
+  text-decoration: none;
+  color: #2D9CDB;
+}
+
+.menu--btn {
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+}
+#logout  {
+  color: red;
 }
 footer {
   margin-top: 20vmin;
@@ -113,6 +155,7 @@ footer {
 footer a {
   color: #8c8c8c;
 }
+
 
 
 /*****
@@ -217,11 +260,14 @@ Vista de escritorio
     border-radius: 10px;
     padding: 0px 40px 50px;
     border: 2px solid #E0E0E0;
-    margin-top: 50px;
+    margin-top: 15px;
   }
   .box-content .content {
     justify-content: start;
-    align-items: center;
+    align-items: start;
+  }
+  .content label {
+    text-align: start;
   }
 
   .content p:nth-child(1) {
@@ -234,8 +280,12 @@ Vista de escritorio
     text-align: right;
   }
   .content .content--img {
-    padding-left: 100px;
+    height: 100px;
+    width: 100px;
   }  
+  .change-info h2 {
+    margin-top: 30px;
+  }
 
 }
 
