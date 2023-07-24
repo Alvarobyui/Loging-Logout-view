@@ -1,9 +1,256 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600&display=swap');
 
+/*****
+Vista mobil
+******/
+
 html {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 body {
   font-family: 'Noto Sans', sans-serif;
  }
+
+.container .menu-desplegable  {
+  display: none;
+}
+.container {
+  margin: 0 4%;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+.container .heading {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.container .logo {
+  width: 140px; 
+}
+.container .photo {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.personal-info .titles{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.personal-info .titles h1{
+  font-size: 24px;
+  margin: 35px auto 10px;
+}
+.personal-info .titles p{
+  font-size: 12px;
+  margin: 0;
+}
+
+.box-content .content-heading {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  align-items: center;
+}
+/* .content-heading .heading--title {
+
+} */
+.content-heading #edit-button {
+  width: 100px;
+  height: 37px;
+  border-radius: 10px;
+  color: #828282;
+  background-color: white;
+  border: 1px solid #828282;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.content-heading .heading--title h2{
+  margin: 0 0 5px 0;
+}
+.content-heading .heading--title p{
+  margin-top: 0;
+  font-size: 13px;
+  color: #828282;
+}
+
+.box-content .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #bbbbbb;
+}
+.content p:nth-child(1) {
+  color: #909090;
+  font-size: 13px;
+}
+.content p:nth-child(2) {
+  font-size: 16px;
+  padding-left: 40px;
+  text-align: right;
+}
+.content .content--img {
+  border-radius: 10px;
+}
+.content .content--img img{
+  border-radius: 10px;
+}
+footer {
+  margin-top: 20vmin;
+  font-size: 14px;
+  color: #BDBDBD;
+  display: flex;
+  justify-content: space-between;
+}
+footer a {
+  color: #8c8c8c;
+}
+
+
+/*****
+Vista de escritorio
+******/
+@media screen and (min-width: 65rem) {
+  html {
+    display: flex;
+    justify-content: center;
+  }
+  body {
+    max-width: 1200px;
+  }
+  .heading .logo {
+    width: 140px;
+    position: fixed;
+    left: 60px; 
+  }
+
+  .heading .photo {
+    display: none;
+  }
+  .container {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+  }
+  .container .menu-desplegable  {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 30px;
+  }
+  .menu-desplegable .profile {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 12px;
+  }
+  .menu-desplegable .profile .img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .menu-desplegable .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 250px;
+    border: 1px solid #bbbbbb;
+    border-radius: 12px;
+    padding: 8px 50px 8px 8px;
+    margin-top: 20px;
+    margin-right: 55px;
+  }
+  .menu .menu--btn {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: transparent;
+    border: none;
+    border-radius: 8px;
+    height: 30px;
+    padding: 0 15px;
+  }
+
+  .menu .menu--btn:hover {
+    background-color: #BDBDBD;
+  }
+  .menu .menu--btn :nth-child(1) {
+    height: 20px;
+    width: 20px;
+  }
+  .menu--btn p {
+    padding: 0;
+  }
+
+  .btn-myprofile {
+    height: 20px;
+    width: 20px;
+  }
+  .btn-myprofile img {
+    border-radius: 50%;
+  }
+
+  .personal-info {
+    margin-top: 50px;
+    width: 800px;
+    margin-right: 95px;
+  }
+
+  .personal-info .titles h1 {
+    font-size: 36px;
+  }
+  .personal-info .titles P {
+    font-size: 18px;
+  }
+
+  .box-content {
+    border-radius: 10px;
+    padding: 0px 40px 50px;
+    border: 2px solid #E0E0E0;
+    margin-top: 50px;
+  }
+  .box-content .content {
+    justify-content: start;
+    align-items: center;
+  }
+
+  .content p:nth-child(1) {
+    color: #909090;
+    font-size: 20px;
+  }
+  .content p:nth-child(2) {
+    font-size: 16px;
+    padding-left: 100px;
+    text-align: right;
+  }
+  .content .content--img {
+    padding-left: 100px;
+  }  
+
+}
+
+
+
+
+
+
+@media screen and (min-width: 2000px) {
+  .heading .logo {
+    position: static;
+
+  }
+  .container .menu-desplegable  {
+    position: static; 
+  }
+
+}

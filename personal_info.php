@@ -30,7 +30,7 @@
               <h2>Profile</h2>
               <p>Some info may be visible to other people</p>
             </div>
-            <button>Edit</button>
+            <a id="edit-button" href="change_info.php">Edit</a>
           </section>
           <section class="content">
             <p>PHOTO</p>
@@ -75,20 +75,20 @@
       </div>
       <div class="menu">
         <button class="menu--btn">
-          <span class="">
-            <img src="logo.png" alt="o">
+          <span class="btn-myprofile">
+            <img src="./img/user.png" alt="o">
           </span>
           <p>My profile</p>
         </button>
         <button class="menu--btn">
-          <span class="">
-            <img src="logo.png" alt="o">
+          <span class="btn-group">
+            <img src="./img/group.png" alt="o">
           </span>
           <p>Group Chat</p>
         </button>
         <button class="menu--btn">
-          <span class="">
-            <img src="logo.png" alt="o">
+          <span class="btn-logout">
+            <img src="./img/logout.png" alt="o">
           </span>
           <p>Logout</p>
         </button>

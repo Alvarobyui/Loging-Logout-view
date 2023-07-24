@@ -61,13 +61,17 @@ img {
 /* .content-heading .heading--title {
 
 } */
-.content-heading button {
+.content-heading #edit-button {
   width: 100px;
   height: 37px;
   border-radius: 10px;
   color: #828282;
   background-color: white;
   border: 1px solid #828282;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
 .content-heading .heading--title h2{
   margin: 0 0 5px 0;
@@ -114,7 +118,7 @@ footer a {
 /*****
 Vista de escritorio
 ******/
-@media screen and (min-width: 55rem) {
+@media screen and (min-width: 65rem) {
   html {
     display: flex;
     justify-content: center;
@@ -140,7 +144,7 @@ Vista de escritorio
     display: flex;
     flex-direction: column;
     position: fixed;
-    right: 80px;
+    right: 30px;
   }
   .menu-desplegable .profile {
     display: flex;
@@ -160,6 +164,11 @@ Vista de escritorio
     flex-direction: column;
     gap: 0.5rem;
     max-width: 250px;
+    border: 1px solid #bbbbbb;
+    border-radius: 12px;
+    padding: 8px 50px 8px 8px;
+    margin-top: 20px;
+    margin-right: 55px;
   }
   .menu .menu--btn {
     display: flex;
@@ -167,13 +176,34 @@ Vista de escritorio
     gap: 1rem;
     background-color: transparent;
     border: none;
-    border-radius: 10px;
+    border-radius: 8px;
     height: 30px;
+    padding: 0 15px;
+  }
+
+  .menu .menu--btn:hover {
+    background-color: #BDBDBD;
+  }
+  .menu .menu--btn :nth-child(1) {
+    height: 20px;
+    width: 20px;
+  }
+  .menu--btn p {
+    padding: 0;
+  }
+
+  .btn-myprofile {
+    height: 20px;
+    width: 20px;
+  }
+  .btn-myprofile img {
+    border-radius: 50%;
   }
 
   .personal-info {
     margin-top: 50px;
     width: 800px;
+    margin-right: 95px;
   }
 
   .personal-info .titles h1 {
@@ -183,19 +213,30 @@ Vista de escritorio
     font-size: 18px;
   }
 
+  .box-content {
+    border-radius: 10px;
+    padding: 0px 40px 50px;
+    border: 2px solid #E0E0E0;
+    margin-top: 50px;
+  }
   .box-content .content {
     justify-content: start;
     align-items: center;
   }
+
   .content p:nth-child(1) {
     color: #909090;
-    font-size: 13px;
+    font-size: 20px;
   }
   .content p:nth-child(2) {
     font-size: 16px;
-    padding-left: 60px;
+    padding-left: 100px;
     text-align: right;
   }
+  .content .content--img {
+    padding-left: 100px;
+  }  
+
 }
 
 

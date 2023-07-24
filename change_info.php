@@ -1,5 +1,6 @@
  <!DOCTYPE html>
  <html lang="en">
+
  <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,37 +11,43 @@
  <body>
    <div class="container">
      <main>
-       <div class="logo">
-         <img src="logo.jpg" alt="logo">
+       <div class="heading">
+         <div class="logo">
+           <img src="./img/logo.png " alt="logo">
+         </div>
+         <div class="photo">
+           <img src="./img/user.png" alt="user">
+         </div>
        </div>
        <div class="personal-info">
-         <button>"<" Back</button>
-             <div class="box">
-               <h2>Change Info</h2>
-               <p>Some info may be visible to other people</p>
-               <div class="change-profile">
-                 <button class="content--link"><img src="img.png" alt="icon"></button>
-                 <p>CHANGE PHOTO</p>
-               </div>
-               <form action="db_personal_info.php">
-                 <label for="name">Name</label>
-                 <input type="text" name="name" id="name" placeholder="Enter your name...">
-                 <label for="bio">Bio</label>
-                 <input type="text" name="bio" id="bio" placeholder="Enter your bio...">
-                 <label for="phone">Phone</label>
-                 <input type="text" name="phone" id="phone" placeholder="Enter your phone...">
-                 <label for="email">Email</label>
-                 <input type="email" name="email" id="email" placeholder="Enter your email...">
-                 <label for="password">Password</label>
-                 <input type="text" name="password" id="password" placeholder="Enter your new password...">
+          <button>"<" Back</button>
+          <div class="box">
+            <h2>Change Info</h2>
+            <p>Some info may be visible to other people</p>
+            <form action="db_personal_info.php">
+              <div class="change-profile">
+                <button class="content--link"><img src="img.png" alt="icon"></button>
+                <p>CHANGE PHOTO</p>
+                <input class="content--input" type="file" id="file" placeholder="CHANGE PHOTO">
+              </div>
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" placeholder="Enter your name...">
+              <label for="bio">Bio</label>
+              <input type="text" name="bio" id="bio" placeholder="Enter your bio...">
+              <label for="phone">Phone</label>
+              <input type="text" name="phone" id="phone" placeholder="Enter your phone...">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" placeholder="Enter your email...">
+              <label for="password">Password</label>
+              <input type="text" name="password" id="password" placeholder="Enter your new password...">
 
-                 <input type="submit" value="Save">
-               </form>
-             </div>
-             <footer>
-               <span>created by Alvaro Diaz</span>
-               <span>devChallenges.io</span>
-             </footer>
+              <input type="submit" value="Save">
+            </form>
+          </div>
+          <footer>
+            <span>created by Alvaro Diaz</span>
+            <span>devChallenges.io</span>
+          </footer>
        </div>
      </main>
      <aside class="menu-desplegable">
