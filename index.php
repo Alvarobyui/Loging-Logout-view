@@ -1,3 +1,8 @@
+<?php
+session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,7 +21,7 @@
       </div>
       <h1>Join thousands of learners from around the world</h1>
       <p>Master web development by making real-life projects. There are multiple paths for you to choose</p>
-      <form class="form" action="db_login.php">
+      <form class="form" action="connect_register.php" method="POST">
         <div class="form--item">
           <div class="form--img"><img src="./img/envelope.png" alt="logo"></div>
           <input type="email" name="email" id="email_register" placeholder="Email">
@@ -25,7 +30,7 @@
           <div class="form--img"><img src="./img/lock.png" alt="logo"></div>
           <input type="password" name="password" id="password_register" placeholder="Password">
         </div>
-        <input class="button" type="button" value="Start coding now">
+        <input class="button" name="register-btn" type="submit" value="Start coding now">
       </form>
       <section class="social">
         <p>or continue with these social profile</p>

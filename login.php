@@ -13,7 +13,7 @@
         <img src="./img/logo.png" alt="logo">
       </div>
       <h1 id="login-title">Login</h1>
-      <form class="form" action="db_login.php">
+      <form class="form" action="db_login.php" method="POST">
         <div class="form--item">
           <div class="form--img"><img src="./img/envelope.png" alt="logo"></div>
           <input type="email" name="email" id="email_login" placeholder="Email">
@@ -22,7 +22,7 @@
           <div class="form--img"><img src="./img/lock.png" alt="logo"></div>
           <input type="password" name="password" id="password_login" placeholder="Password">
         </div>
-        <input class="button" type="button" value="Login">
+        <input class="button" type="submit" value="Login">
       </form>
       <section class="social">
         <p>or continue with these social profile</p>
@@ -40,7 +40,7 @@
             <img src="./img/github.png" alt="logo">
           </a>
         </div>
-        <p>Already a member? <a href="login.php">Register</a></p>
+        <p>Already a member? <a href="index.php">Register</a></p>
       </section>
     </section>
     <footer>
