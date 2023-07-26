@@ -48,7 +48,7 @@ if (isset($_POST['register-btn'])) {
           
           mysqli_stmt_bind_param($stmt, "ss", $username, $hashedPwd);
           mysqli_stmt_execute($stmt);
-          header("Location: ./personal_info.php?personal_info?success");
+          header("Location: ./login.php?login?success");
           exit();
         }
       }  
@@ -59,7 +59,7 @@ if (isset($_POST['register-btn'])) {
  
 }
 else {
-  header("Location: ./personal_info.php");
+  header("Location: ./login.php");
   exit();  
 }
 

@@ -56,6 +56,12 @@
               <input type="submit" value="Save" id="save">
             </form>
           </div>
+          <a href="logout.php" id="new-logout" class="menu--btn">
+            <span class="btn-logout">
+              <img src="./img/logout.png" alt="o">
+            </span>
+            <p>Logout</p>
+          </a>
           <footer>
             <span>created by Alvaro Diaz</span>
             <span>devChallenges.io</span>

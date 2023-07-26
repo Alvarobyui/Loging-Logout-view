@@ -155,6 +155,24 @@ footer {
 footer a {
   color: #8c8c8c;
 }
+#new-logout {
+  display: flex;
+  border: 1px solid #BDBDBD;
+  border-radius: 10px;
+  width: 100px;
+  height: 50px;
+  padding: 3px 8px;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: red;
+}
+#new-logout .btn-logout{
+  height: 20px;
+  width: 20px;
+}
+
 
 
 
@@ -285,6 +303,9 @@ Vista de escritorio
   }  
   .change-info h2 {
     margin-top: 30px;
+  }
+  #new-logout {
+    display: none;
   }
 
 }
