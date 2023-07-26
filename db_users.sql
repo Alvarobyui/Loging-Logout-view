@@ -42,6 +42,35 @@ LOCK TABLES `login_users` WRITE;
 /*!40000 ALTER TABLE `login_users` DISABLE KEYS */;
 /*!40000 ALTER TABLE `login_users` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Table structure for table `newusers`
+--
+
+DROP TABLE IF EXISTS `newusers`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `newusers` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `email` tinytext NOT NULL,
+  `pwd` longtext NOT NULL,
+  `name` varchar(10) DEFAULT NULL,
+  `photo` varchar(100) DEFAULT NULL,
+  `bio` longtext DEFAULT NULL,
+  `phone` varchar(10) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `newusers`
+--
+
+LOCK TABLES `newusers` WRITE;
+/*!40000 ALTER TABLE `newusers` DISABLE KEYS */;
+INSERT INTO `newusers` VALUES (1,'user@user.user','$2y$10$vs2bun9Kkp4kOmmIROaXS.RXrQeC4FU4nAkdMrvIwWaTJvbQAVgjW',NULL,NULL,NULL,NULL),(2,'user2@user.user','$2y$10$SE6OrFiwRsBgY/931N6XLOQof8UgvWQW29qykO.UCnPDyZKugbBOO',NULL,NULL,NULL,NULL),(3,'user3@user.user','$2y$10$9HW6kFAaw/lLBxMbIfhbwuivZctNwch/QPgI5xCTkjHTYODbUfUWy',NULL,NULL,NULL,NULL);
+/*!40000 ALTER TABLE `newusers` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -52,4 +81,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-07-24 16:59:08
+-- Dump completed on 2023-07-25 21:58:34
